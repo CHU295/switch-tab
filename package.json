@@ -1,6 +1,6 @@
 {
   "name": "chu-switch-tab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "通过自定义按键，以达到控制页面表格等元素切换的功能",
   "main": "index.js",
   "scripts": {
