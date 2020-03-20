@@ -61,7 +61,7 @@ mounted() {
     matchingEl: ['input'], 
     callbackFucForMe: ()=>{
       console.log('切换成功了！')
-    }), 
+    } 
   }) 
 }
 beforeDestroy() {

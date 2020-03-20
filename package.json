@@ -1,0 +1,22 @@
+{
+  "name": "chu-switch-tab",
+  "version": "0.1.0",
+  "description": "通过自定义按键，以达到控制页面表格等元素切换的功能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHU295/swtich-tab.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "chu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHU295/swtich-tab/issues"
+  },
+  "homepage": "https://github.com/CHU295/swtich-tab#readme"
+}
