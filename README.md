@@ -1,6 +1,7 @@
->[github](https://github.com/CHU295/swtich-tab)
 # 简介
 通过自定义按键，以达到控制页面表格等元素切换的功能；  
+
+> ```npm i chu-switch-tab```
 
 ## 使用场景
 在网页中，正常情况下是可以使用tab shift+tab切换例如input select button此类组件的选中聚焦等状态
@@ -61,7 +62,7 @@ mounted() {
     matchingEl: ['input'], 
     callbackFucForMe: ()=>{
       console.log('切换成功了！')
-    } 
+    }
   }) 
 }
 beforeDestroy() {
@@ -76,6 +77,9 @@ react中只需要修改`mounted beforeDestroy`为对应生命周期即可
 2. 若使用` + - < > `此类输入性按键切换，记得在输入框内过滤
 3. select此类标签切换后需要关闭下拉框，可在回调事件`callbackFucForMe`中添加
 
+---
+> [github](https://github.com/CHU295/swtich-tab)  
+>[npm](https://www.npmjs.com/package/chu-switch-tab)
 ----
 # 附录
 
