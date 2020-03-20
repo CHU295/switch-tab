@@ -29,7 +29,7 @@ demo：[http://118.25.55.180:2957/](http://118.25.55.180:2957/)
 
 **因`KeyboardEvent`的`keycode`属性即将被遗弃**
 
-**所以此代码中使用的是<label style="color:red">key</label>字段，下面附录有对象码表**
+**所以此代码中使用的是<label style="color:red">key</label>字段，下面附录有对应码表**
 
 # 使用
 1. 使用前须先添加事件：`addKeydownEvent`、`removeKeydownEvent`  
@@ -85,7 +85,7 @@ react中只需要修改`mounted beforeDestroy`为对应生命周期即可
 3. select此类标签切换后需要关闭下拉框，可在回调事件`callbackFucForMe`中添加
 
 ---
-> [github](https://github.com/CHU295/swtich-tab)  
+> [github](https://github.com/CHU295/switch-tab)  
 >[npm](https://www.npmjs.com/package/chu-switch-tab)
 ----
 # 附录
