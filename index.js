@@ -77,4 +77,4 @@ const tabSwtich = {
   setUpKey: setUpKey
 }
 
-export default tabSwtich
+module.exports = tabSwtich
