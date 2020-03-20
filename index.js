@@ -1,7 +1,7 @@
 let globalOptions = {
   mainBodyElName: '',  // 主体元素类名，必填，如：'#id' '.myForm'
-  preBtnKey: 'ArrowUp',// 上一个按钮 ，非必填，默认方向键 ↑
-  nextBtnKey: 'ArrowDown', // 上一个按钮 ，非必填，默认方向键 ↓
+  preBtnKey: 'ArrowUp',// 上一个按钮 ，非必填，默认方向键 ↑，key值见附录
+  nextBtnKey: 'ArrowDown', // 下一个按钮 ，非必填，默认方向键 ↓，key值见附录
   matchingEl: ['input'], // 匹配元素，非必填，默认input标签，接受数组格式
   callbackFucForMe: null, // 回调函数，非必填，切换完成后触发，可通过此处配置自定义事件
 }
