@@ -1,8 +1,9 @@
 let globalOptions = {
   mainBodyElName: '',  // 主体元素类名，必填，如：'#id' '.myForm'
-  preBtnKey: 'ArrowUp',// 上一个按钮，默认方向键 ↑ ，非必填
-  nextBtnKey: 'ArrowDown', // 上一个按钮，默认方向键 ↓ ，非必填
-  callbackFucForMe: null, // 回调函数，切换完成后触发，可通过此处配置自定义事件
+  preBtnKey: 'ArrowUp',// 上一个按钮 ，非必填，默认方向键 ↑
+  nextBtnKey: 'ArrowDown', // 上一个按钮 ，非必填，默认方向键 ↓
+  matchingEl: ['input'], // 匹配元素，非必填，默认input标签，接受数组格式
+  callbackFucForMe: null, // 回调函数，非必填，切换完成后触发，可通过此处配置自定义事件
 }
 
 // 属性设置
@@ -31,15 +32,15 @@ function removeKeydownEvent() {
  */
 function keyTabs(event) {
   let tabChangeType = true;
-  if (event.code === globalOptions.nextBtnKey) {
+  if (event.key === globalOptions.nextBtnKey) {
     tabChangeType = true;
-  } else if (event.code === globalOptions.preBtnKey) {
+  } else if (event.key === globalOptions.preBtnKey) {
     tabChangeType = false;
   } else {
     return false;
   }
   let indexs = 0,
-    allInputEl = document.querySelector(globalOptions.mainBodyElName).querySelectorAll("input");
+    allInputEl = document.querySelector(globalOptions.mainBodyElName).querySelectorAll(globalOptions.matchingEl.join(','));
   let currrentEl = document.activeElement;
   // 某些操作会导致元素失焦，目标变成document.body，此时设置下标为0
   if (currrentEl == document.body) {
