@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./index.js"></script>
+  <style>
+    #con {
+      max-width: 500px;
+      margin: 100px auto 0;
+    }
+
+    #con input,select {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="con">
+    <div class="alert alert-success" role="alert">
+      <p>未选中时切换直接到第二个不是bug</p>
+      <p>这样设计的而已，如果你觉得不合适自己改一下代码即可</p>
+    </div>
+    <input class="form-control" type="text" placeholder="使用左右方向键切换">
+    <input class="form-control" type="text" placeholder="支持select等类型">
+    <select class="form-control">
+      <option>我是下拉框</option>
+    </select>
+    <input class="form-control" type="text" placeholder="循环中">
+    <button type="button" class="btn btn-primary" onclick="alert('全都支持,真好用~~~~~~~~')">支持button</button>
+    <button type="button" class="btn btn-success" onclick="alert('记得start分享')">添加参数即可</button>
+  </div>
+  <script>
+    window.onload = () => {
+      tabSwtich.addKeydownEvent();
+      tabSwtich.setUpKey({
+        mainBodyElName: '#con',
+        preBtnKey: 'ArrowLeft',
+        nextBtnKey: 'ArrowRight',
+        matchingEl: ['input', 'select', 'button'],
+        callbackFucForMe: () => {
+          console.log('切换成功了！')
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

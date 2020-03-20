@@ -3,6 +3,8 @@
   <a href="https://www.npmjs.com/package/chu-switch-tab"><img src="https://img.shields.io/npm/v/chu-switch-tab.svg?sanitize=true" alt="Version"></a>
 </p>
 
+demo：[http://118.25.55.180:2957/](http://118.25.55.180:2957/)
+
 # 简介
 通过自定义按键，以达到控制页面表格等元素切换的功能；  
 
